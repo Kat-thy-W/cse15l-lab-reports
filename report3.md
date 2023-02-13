@@ -8,7 +8,7 @@ source: https://linuxhandbook.com/less-command/
 We use less to access the content of a file, and the -N option show the line number of the content of the txt file, which give use and idea of how the content was organized.
 ```
 input: 
-  less -N written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+$ less -N written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
   
 output:
       1
@@ -36,7 +36,7 @@ output:
 use less -n to access content of two files at the same time. During the viewer mode, use :n (view next) and :p (view previous) to navigate between two files
 ```
 input:
-less -N written_2/travel_guides/berlitz1/HandRHawaii.txt written_2/non-fiction/OUP/Kauffman/ch4.txt
+$ less -N written_2/travel_guides/berlitz1/HandRHawaii.txt written_2/non-fiction/OUP/Kauffman/ch4.txt
 
 output:
 (first file)
@@ -115,7 +115,7 @@ output:
 ```
 
 
-##Search but Ignoring Case
+## Search but Ignoring Case
 less -i \
 source: https://man7.org/linux/man-pages/man1/less.1.html
 With the -i option, less will ignore case in path and file names
@@ -123,7 +123,7 @@ With the -i option, less will ignore case in path and file names
 the relative path of target file is "written_2/travel_guides/berlitz2/PuertoRico-History.txt", we alter the cases in a few places of this path, with the -i option, we are still able to reach our target file.
 ```
 input:
-less -i Written_2/Travel_guides/berLitz2/paris-whereTogo.txt
+$ less -i Written_2/Travel_guides/berLitz2/paris-whereTogo.txt
 
 output:
 
@@ -148,7 +148,7 @@ Athens-History.txt       Bali-WhereToGo.txt     Bermuda-history.txt      Canada-
 Athens-Intro.txt         Barcelona-History.txt  Bermuda-WhatToDo.txt     Canada-WhereToGo.txt      CostaBlanca-History.txt      Cuba-WhatToDo.txt         Portugal-History.txt
 
 input: 
- less -i cuba-whattodo.txt
+$ less -i cuba-whattodo.txt
 
 
 output:
@@ -165,9 +165,62 @@ Discos pulsate to both Latin and Euro-American rhythms. The places to be are Hab
 Bars and Cafés
 ```
 
-## Highlight the String Which was found by Last Search Command
-less -g \
+## Show Percentage View of current file
+less -mouse \
 source: https://man7.org/linux/man-pages/man1/less.1.html
+### example1:
+use less -mouse when viewing file, give us more clue where are we at on a file
+```
+input: 
+$ less -mouse -i cuba-whattodo.txt
+
+output:
+What to DoEntertainment
+Although cultural activity has been under state control since the revolution and Havana no longer sizzles with the sleazy Mafia-funded casinos and clubs of the 1950s, both high culture and more down-to-earth nightlife thrive in Cuba. Outside the resorts, it can be hard to pin down what’s going on where, but informal musical performances are ubiquitous. In the resorts, nightlife is focused around hotels, ranging from decent live bands, dance, and fashion shows to mimed Beatles sing-a-longs.
+Live Music PerformancesCubans crave live music, and — with the surge in international popularity of traditional Cuban music — so do most visitors to Cuba. You certainly won’t have to go out of your way to hear music performances. Roving groups of musicians can be found playing everywhere from airports to restaurants. Merely wandering the streets of Havana, Santiago, or Trinidad, you’re likely to stumble across a party with a live band, or even a back alley where some impromptu jamming is going on. On Saturday nights in Camagüey, the music spreads to the streets in a “Noche Camagüeya” block party along Calle República.
+All the styles of Cuba’s delectable traditional music �� habaneras, son, boleros, guarachas, guajiras, and more — can be heard in every town’s casa de la trova, usually a fine old building on or near the main square. Performances are amateur and professional, take place afternoons and evenings, and are free or have a minimal cover charge (US$1–$2). Especially in the evenings and on weekends, when you’ll encounterCuba-History.txtCuba-WhatToDo.txt
+Cuba-WhereToGo.txt
+
+
+
+
+What to Do
+Entertainment
+Although cultural activity has been under state control since the revolution and Havana no longer sizzles with the sleazy Mafia-funded casinos and clubs of the 1950s, both high culture and more down-to-earth nightlife thrive in Cuba. Outside the resorts, it can be hard to pin down what’s going on where, but informal musical performances are ubiquitous. In the resorts, nightlife is focused around hotels, ranging from decent live bands, dance, and fashion shows to mimed Beatles sing-a-longs.Live Music PerformancesCubans crave live music, and — with the surge in international popularity of traditional Cuban music — so do most visitors to Cuba. You certainly won’t have to go out of your way to hear music performances. Roving groups of musicians can be found playing everywhere from airports to restaurants. Merely wandering the streets of Havana, Santiago, or Trinidad, you’re likely to stumble across a party with a live band, or even a back alley where some impromptu jamming is going on. On Saturday nights in Camagüey, the music spreads to the streets in a “Noche Camagüeya” block party along Calle República.All the styles of Cuba’s delectable traditional music �� habaneras, son, boleros, guarachas, guajiras, and more — can be heard in every town’s casa de la trova, usually a fine old building on or near the main square. Performances are amateur and professional, take place afternoons and evenings, and are free or have a minimal cover charge (US$1–$2). Especially in the evenings and on weekends, when you’ll encounter a vibrant mix of Cubans and foreigners, the island’s casas de la trova really swing. The most famous is in Santiago de Cuba (which has sprung many a star), while those in towns like Trinidad, Baracoa, and Camagüey are especially charming.Aside from traditional acoustic music, Cuba revels in salsa and jazz. Probably the best place for live jazz and salsa in the country is the rollicking Palacio de la Salsa, in Havana’s slightly dated Hotel Riviera (Paseo y Malecón, in Vedado; Tel. 33-4501). There, from midnight on, Cuba’s very best salsa bands perform (dancing is very much in order), and jazz artists entertain drinkers in the adjacent bar from Thursday to Sunday from 9pm.Other music hotspots include:
+Havana. Casa de la Música (salsa; Avenida 35 and Calle 20, Miramar), Casa de la Trova (San Lázaro between Gervasio and Belascoán, Central Havana), and El Zorro y el Cuevo, (jazz; Calles 23 y O, Vedado).      
+Trinidad. Casa de la Trova (Hernández Echerrí, 29), Casa de la Música (Calle Márquez), La Canchánchara (Calle Villena, 70), and Casa Fisher (Calle Lino Pérez).Santiago de Cuba. Casa de la Trova (Calle Heredia), Casa de las Tradiciones (Calle General Lacret).
+Baracoa. Casa de la Trova (José Martí, 149) and Casa de la Cultura (Maceo, 122).Cabaret
+A legacy of the high-rolling casino days in Cuba, cabarets have been kept alive and well as an outlet for tourist dollars. Cavorting mulatta dancers in sparkling G-strings and pairs of strategically placed stars may not be most peoples’ image of socialist doctrine — but this is Caribbean communism. While the best shows (at the Tropicana clubs in both Havana and Santiago de Cuba) are rather expensive by Cuban standards, seeing at least one big song-and-dance production in the flesh (so to speak) is de riguer.The Tropicana in Havana (Calles 72 and 43, Marianao; Tel. 33-7507), founded in 1939 in a dazzling open-air arena, is indisputably the queen of cabarets. The likes of Nat King Cole performed here in pre-revolutionary times. With a 32-piece orchestra and a cast of over 200 (some parading in impossibly large headdresses), the sheer scale of the spectacle will make your head spin. The show regularly kicks off at 9:30pm, and a shorter performance follows later; there are also a restaurant and disco. Reservations and transportation can be arranged at your hotel for US$60. You can always visit independently, but the venue, situated in the suburb of Marianao, is tricky to find, and you might arrive only to find no tickets remaining. Havana’s next-best cabaret show, smaller and less expensive, is Cabaret Parisien, at the Hotel Nacional (Calles 21 and O, Vedado; Tel. 30-3564), nightly at 10:30pm; admission is US$35.
+The Tropicana in Santiago de Cuba (Autopista Nacional km 1.5, with signs from Plaza de la Revolución; Tel. 4-3036) fills an enormous, recently constructed complex on the city’s northern outskirts. It is no less impressive than Havana’s but a bit less gaudy. Admission is US$30, including a drink ($27 if purchased from a travel agency).
+In Varadero, the Cabaret Continental at the Hotel Internacional (shows nightly from 8:30pm to 3am) pales in comparison with the former venues but is nonetheless an enjoyable and sometimes fairly raunchy song-and-dance extravaganza. A fun show — kind of Afro-Cuban with a pirate theme — followed by disco takes place in a cave at the Cueva del Pirata, some 9 km (6 miles) east of Varadero (Autopista Sur, km 11), nightly at 10:30pm until the wee hours. There is also a cabaret at the Meliá Varadero hotel.
+DiscosDiscos pulsate to both Latin and Euro-American rhythms. The places to be are Habana Café (the disco in Havana’s Hotel Meliá Cohiba) and the disco in Santiago’s eponymous hotel. These are glitzy affairs, where foreigners get soaked and approached by hustlers of all stripes. Also try El Galeón, in a make-believe pirate ship that sets sail from under Havana’s La Cabaña fortress. The best in Varadero is La Bamba at the Hotel Tuxpan (entrance US$10–$15). Also try the open-air Discoteca La Patana, near the bridge into Varadero. In Trinidad, Motel Las Cuevas has a disco with live entertainment, but it pales in comparison to the music halls in town. In Guardalavaca, head for open-air La Roca, set just above the beach.
+Bars and Cafés
+cuba-whattodo.txt 35%
+
+```
+
+### example 2:
+
+a very similar command less -MOUSE give use a little bit more information, other than showing what percentage have we view, also tell us which line of the file are we at
+```
+input:
+$ less -MOUSE -i cuba-whattodo.txt
+
+output:
+What to DoEntertainmentAlthough cultural activity has been under state control since the revolution and Havana no longer sizzles with the sleazy Mafia-funded casinos and clubs of the 1950s, both high culture and more down-to-earth nightlife thrive in Cuba. Outside the resorts, it can be hard to pin down what’s going on where, but informal musical performances are ubiquitous. In the resorts, nightlife is focused around hotels, ranging from decent live bands, dance, and fashion shows to mimed Beatles sing-a-longs.
+Live Music PerformancesCubans crave live music, and — with the surge in international popularity of traditional Cuban music — so do most visitors to Cuba. You certainly won’t have to go out of your way to hear music performances. Roving groups of musicians can be found playing everywhere from airports to restaurants. Merely wandering the streets of Havana, Santiago, or Trinidad, you’re likely to stumble across a party with a live band, or even a back alley where some impromptu jamming is going on. On Saturday nights in Camagüey, the music spreads to the streets in a “Noche Camagüeya” block party along Calle República.All the styles of Cuba’s delectable traditional music �� habaneras, son, boleros, guarachas, guajiras, and more — can be heard in every town’s casa de la trova, usually a fine old building on or near the main square. Performances are amateur and professional, take place afternoons and evenings, and are free or have a minimal cover charge (US$1–$2). Especially in the evenings and on weekends, when you’ll encounter a vibrant mix of Cubans and foreigners, the island’s casas de la trova really swing. The most famous is in Santiago de Cuba (which has sprung many a star), while those in towns like Trinidad, Baracoa, and Camagüey are especially charming.Aside from traditional acoustic music, Cuba revels in salsa and jazz. Probably the best place for live jazz and salsa in the country is the rollicking Palacio de la Salsa, in Havana’s slightly dated Hotel Riviera (Paseo y Malecón, in Vedado; Tel. 33-4501). There, from midnight on, Cuba’s very best salsa bands perform (dancing is very much in order), and jazz artists entertain drinkers in the adjacent bar from Thursday to Sunday from 9pm.Other music hotspots include:
+Havana. Casa de la Música (salsa; Avenida 35 and Calle 20, Miramar), Casa de la Trova (San Lázaro between Gervasio and Belascoán, Central Havana), and El Zorro y el Cuevo, (jazz; Calles 23 y O, Vedado).      Trinidad. Casa de la Trova (Hernández Echerrí, 29), Casa de la Música (Calle Márquez), La Canchánchara (Calle Villena, 70), and Casa Fisher (Calle Lino Pérez).
+Santiago de Cuba. Casa de la Trova (Calle Heredia), Casa de las Tradiciones (Calle General Lacret).
+Baracoa. Casa de la Trova (José Martí, 149) and Casa de la Cultura (Maceo, 122).CabaretA legacy of the high-rolling casino days in Cuba, cabarets have been kept alive and well as an outlet for tourist dollars. Cavorting mulatta dancers in sparkling G-strings and pairs of strategically placed stars may not be most peoples’ image of socialist doctrine — but this is Caribbean communism. While the best shows (at the Tropicana clubs in both Havana and Santiago de Cuba) are rather expensive by Cuban standards, seeing at least one big song-and-dance production in the flesh (so to speak) is de riguer.
+The Tropicana in Havana (Calles 72 and 43, Marianao; Tel. 33-7507), founded in 1939 in a dazzling open-air arena, is indisputably the queen of cabarets. The likes of Nat King Cole performed here in pre-revolutionary times. With a 32-piece orchestra and a cast of over 200 (some parading in impossibly large headdresses), the sheer scale of the spectacle will make your head spin. The show regularly kicks off at 9:30pm, and a shorter performance follows later; there are also a restaurant and disco. Reservations and transportation can be arranged at your hotel for US$60. You can always visit independently, but the venue, situated in the suburb of Marianao, is tricky to find, and you might arrive only to find no tickets remaining. Havana’s next-best cabaret show, smaller and less expensive, is Cabaret Parisien, at the Hotel Nacional (Calles 21 and O, Vedado; Tel. 30-3564), nightly at 10:30pm; admission is US$35.
+The Tropicana in Santiago de Cuba (Autopista Nacional km 1.5, with signs from Plaza de la Revolución; Tel. 4-3036) fills an enormous, recently constructed complex on the city’s northern outskirts. It is no less impressive than Havana’s but a bit less gaudy. Admission is US$30, including a drink ($27 if purchased from a travel agency).
+In Varadero, the Cabaret Continental at the Hotel Internacional (shows nightly from 8:30pm to 3am) pales in comparison with the former venues but is nonetheless an enjoyable and sometimes fairly raunchy song-and-dance extravaganza. A fun show — kind of Afro-Cuban with a pirate theme — followed by disco takes place in a cave at the Cueva del Pirata, some 9 km (6 miles) east of Varadero (Autopista Sur, km 11), nightly at 10:30pm until the wee hours. There is also a cabaret at the Meliá Varadero hotel.
+Discos
+Discos pulsate to both Latin and Euro-American rhythms. The places to be are Habana Café (the disco in Havana’s Hotel Meliá Cohiba) and the disco in Santiago’s eponymous hotel. These are glitzy affairs, where foreigners get soaked and approached by hustlers of all stripes. Also try El Galeón, in a make-believe pirate ship that sets sail from under Havana’s La Cabaña fortress. The best in Varadero is La Bamba at the Hotel Tuxpan (entrance US$10–$15). Also try the open-air Discoteca La Patana, near the bridge into Varadero. In Trinidad, Motel Las Cuevas has a disco with live entertainment, but it pales in comparison to the music halls in town. In Guardalavaca, head for open-air La Roca, set just above the beach.
+Bars and Cafés
+cuba-whattodo.txt lines 1-24/56 35%
+
+```
 
 ##  Combine less with Other Command by Pipe
 other command | less \
