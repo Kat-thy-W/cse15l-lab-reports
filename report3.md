@@ -165,7 +165,7 @@ Discos pulsate to both Latin and Euro-American rhythms. The places to be are Hab
 Bars and Cafés
 ```
 
-## Show Percentage View of current file
+## Show Where Are We At When Viewing a File
 less -mouse \
 source: https://man7.org/linux/man-pages/man1/less.1.html
 ### example1:
@@ -225,7 +225,61 @@ cuba-whattodo.txt lines 1-24/56 35%
 ##  Combine less with Other Command by Pipe
 other command | less \
 source: https://www.geeksforgeeks.org/less-command-linux-examples/
+### example 1:
+view result from the find command immediately by joining the less command with a pipe. Combine with the -N option in less command, we can quickly tell how many subdirectories and files did the find command return
+
+```
+input:
+find written_2/ | less -N
+
+output:
+      1 written_2/
+      2 written_2/non-fiction
+      3 written_2/non-fiction/OUP
+      4 written_2/non-fiction/OUP/Abernathy
+      5 written_2/non-fiction/OUP/Abernathy/ch1.txt
+      6 written_2/non-fiction/OUP/Abernathy/ch14.txt
+      7 written_2/non-fiction/OUP/Abernathy/ch15.txt
+      8 written_2/non-fiction/OUP/Abernathy/ch2.txt
+      9 written_2/non-fiction/OUP/Abernathy/ch3.txt
+     10 written_2/non-fiction/OUP/Abernathy/ch6.txt
+     11 written_2/non-fiction/OUP/Abernathy/ch7.txt
+     12 written_2/non-fiction/OUP/Abernathy/ch8.txt
+     13 written_2/non-fiction/OUP/Abernathy/ch9.txt
+     14 written_2/non-fiction/OUP/Berk
+     15 written_2/non-fiction/OUP/Berk/ch1.txt
+     16 written_2/non-fiction/OUP/Berk/ch2.txt
+     17 written_2/non-fiction/OUP/Berk/CH4.txt
+     18 written_2/non-fiction/OUP/Berk/ch7.txt
+     19 written_2/non-fiction/OUP/Castro
+     20 written_2/non-fiction/OUP/Castro/chA.txt
+     21 written_2/non-fiction/OUP/Castro/chB.txt
+     22 written_2/non-fiction/OUP/Castro/chC.txt
+     23 written_2/non-fiction/OUP/Castro/chL.txt
+     24 written_2/non-fiction/OUP/Castro/chM.txt
+     25 written_2/non-fiction/OUP/Castro/chN.txt
+     26 written_2/non-fiction/OUP/Castro/chO.txt
+     27 written_2/non-fiction/OUP/Castro/chP.txt
+     28 written_2/non-fiction/OUP/Castro/chQ.txt
+     29 written_2/non-fiction/OUP/Castro/chR.txt
+     30 written_2/non-fiction/OUP/Castro/chV.txt
+     31 written_2/non-fiction/OUP/Castro/chW.txt
+     32 written_2/non-fiction/OUP/Castro/chY.txt
+     33 written_2/non-fiction/OUP/Castro/chZ.txt
+     34 written_2/non-fiction/OUP/Fletcher
+     35 written_2/non-fiction/OUP/Fletcher/ch1.txt
+     36 written_2/non-fiction/OUP/Fletcher/ch10.txt
+     37 written_2/non-fiction/OUP/Fletcher/ch2.txt
+     38 written_2/non-fiction/OUP/Fletcher/ch5.txt
+     39 written_2/non-fiction/OUP/Fletcher/ch6.txt
+     40 written_2/non-fiction/OUP/Fletcher/ch9.txt
+     41 written_2/non-fiction/OUP/Kauffman
+     42 written_2/non-fiction/OUP/Kauffman/ch1.txt
+     43 written_2/non-fiction/OUP/Kauffman/ch10.txt
+     44 written_2/non-fiction/OUP/Kauffman/ch3.txt
+     45 written_2/non-fiction/OUP/Kauffman/ch4.txt
+:
+```
+### example 2:
 
 
-
-skill-demo1-data\written_2\non-fiction\OUP\Abernathy
