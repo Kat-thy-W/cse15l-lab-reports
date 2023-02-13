@@ -281,5 +281,58 @@ output:
 :
 ```
 ### example 2:
+joining the wc command with less -N command to view wc result
+```
+input:
+$ wc written_2/travel_guides/berlitz1/*.txt | less -N
+output:
+      1     248    2167   16519 written_2/travel_guides/berlitz1/HandRHawaii.txt
+      2      29     152    1222 written_2/travel_guides/berlitz1/HandRHongKong.txt
+      3      20      86     695 written_2/travel_guides/berlitz1/HandRIbiza.txt
+      4     395    3603   26084 written_2/travel_guides/berlitz1/HandRIsrael.txt
+      5      24     121     955 written_2/travel_guides/berlitz1/HandRIstanbul.txt
+      6     379    3167   25813 written_2/travel_guides/berlitz1/HandRJamaica.txt
+      7      31     179    1477 written_2/travel_guides/berlitz1/HandRJerusalem.txt
+      8      34     202    1562 written_2/travel_guides/berlitz1/HandRLakeDistrict.txt
+      9      34     205    1581 written_2/travel_guides/berlitz1/HandRLasVegas.txt
+     10      27     129    1094 written_2/travel_guides/berlitz1/HandRLisbon.txt
+     11      28     159    1282 written_2/travel_guides/berlitz1/HandRLosAngeles.txt
+     12      30     188    1463 written_2/travel_guides/berlitz1/HandRMadeira.txt
+     13     214    2016   14306 written_2/travel_guides/berlitz1/HandRMadrid.txt
+     14      32     191    1477 written_2/travel_guides/berlitz1/HandRMallorca.txt
+     15     238    2317   16200 written_2/travel_guides/berlitz1/HistoryDublin.txt
+     16     306    3072   21333 written_2/travel_guides/berlitz1/HistoryEdinburgh.txt
+     17     264    2693   18562 written_2/travel_guides/berlitz1/HistoryEgypt.txt
+     18     552    5333   39061 written_2/travel_guides/berlitz1/HistoryFrance.txt
+     19     229    2060   15240 written_2/travel_guides/berlitz1/HistoryFWI.txt
+     20     279    2726   18945 written_2/travel_guides/berlitz1/HistoryGreek.txt
+     21     233    2408   16755 written_2/travel_guides/berlitz1/HistoryHawaii.txt
+     22     216    2115   14830 written_2/travel_guides/berlitz1/HistoryHongKong.txt
+     23     192    1783   12895 written_2/travel_guides/berlitz1/HistoryIbiza.txt
+     24     792    7823   55690 written_2/travel_guides/berlitz1/HistoryIndia.txt
+     25     244    2398   16817 written_2/travel_guides/berlitz1/HistoryIsrael.txt
+     26     392    3901   27491 written_2/travel_guides/berlitz1/HistoryIstanbul.txt
+     27     719    6448   48910 written_2/travel_guides/berlitz1/HistoryItaly.txt
+     28     251    2480   17419 written_2/travel_guides/berlitz1/HistoryJamaica.txt
+     29     602    5723   42391 written_2/travel_guides/berlitz1/HistoryJapan.txt
+     30     264    2664   18755 written_2/travel_guides/berlitz1/HistoryJerusalem.txt
+     31     197    1975   13793 written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt
+     32     278    2745   19246 written_2/travel_guides/berlitz1/HistoryLasVegas.txt
+     33     179    1681   12036 written_2/travel_guides/berlitz1/HistoryMadeira.txt
+     34     188    1752   12707 written_2/travel_guides/berlitz1/HistoryMadrid.txt
+     35     516    4965   36241 written_2/travel_guides/berlitz1/HistoryMalaysia.txt
+     36     203    1961   13933 written_2/travel_guides/berlitz1/HistoryMallorca.txt
+     37     119    1143    7939 written_2/travel_guides/berlitz1/IntroDublin.txt
+     38     139    1377    9566 written_2/travel_guides/berlitz1/IntroEdinburgh.txt
+     39     118    1138    8107 written_2/travel_guides/berlitz1/IntroEgypt.txt
+     40     161    1569   11171 written_2/travel_guides/berlitz1/IntroFrance.txt
+     41     118    1077    7802 written_2/travel_guides/berlitz1/IntroFWI.txt
+     42     126    1215    8449 written_2/travel_guides/berlitz1/IntroGreek.txt
+     43      91     834    5875 written_2/travel_guides/berlitz1/IntroHongKong.txt
+     44      97     914    6307 written_2/travel_guides/berlitz1/IntroIbiza.txt
+     45     385    3797   26821 written_2/travel_guides/berlitz1/IntroIndia.txt
+     ```
+     
+
 
 
