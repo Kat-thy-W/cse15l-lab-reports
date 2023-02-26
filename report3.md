@@ -3,7 +3,7 @@
 
 ## Display Line Number with Less
 less - N \
-source: https://linuxhandbook.com/less-command/
+source: [link](https://linuxhandbook.com/less-command/)
 ### example 1:
 We use less to access the content of a file, and the -N option show the line number of the content of the txt file, which give use and idea of how the content was organized.
 ```
@@ -167,7 +167,7 @@ Bars and Cafés
 
 ## Show Where Are We At When Viewing a File
 less -mouse \
-source: https://man7.org/linux/man-pages/man1/less.1.html
+source: [link] https://man7.org/linux/man-pages/man1/less.1.html
 ### example1:
 use less -mouse when viewing file, give us more clue where are we at on a file
 ```
@@ -224,7 +224,7 @@ cuba-whattodo.txt lines 1-24/56 35%
 
 ##  Combine less with Other Command by Pipe
 other command | less \
-source: https://www.geeksforgeeks.org/less-command-linux-examples/
+source: [link](https://www.geeksforgeeks.org/less-command-linux-examples/)
 ### example 1:
 view result from the find command immediately by joining the less command with a pipe. Combine with the -N option in less command, we can quickly tell how many subdirectories and files did the find command return
 
