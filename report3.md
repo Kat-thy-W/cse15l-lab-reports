@@ -167,7 +167,8 @@ Bars and Cafés
 
 ## Show Where Are We At When Viewing a File
 less -mouse \
-source: [LinuxManual](https://man7.org/linux/man-pages/man1/less.1.html) \
+source: [LinuxManual](https://man7.org/linux/man-pages/man1/less.1.html)  \
+Know position in file
 ### example1:
 use less -mouse when viewing file, give us more clue where are we at on a file
 ```
