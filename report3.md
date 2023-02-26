@@ -117,7 +117,7 @@ output:
 
 ## Search but Ignoring Case
 less -i \
-source: [LinuxManual](https://man7.org/linux/man-pages/man1/less.1.html)
+source: [LinuxManual](https://man7.org/linux/man-pages/man1/less.1.html) \
 With the -i option, less will ignore case in path and file names
 ### example 1:
 the relative path of target file is "written_2/travel_guides/berlitz2/PuertoRico-History.txt", we alter the cases in a few places of this path, with the -i option, we are still able to reach our target file.
@@ -167,7 +167,7 @@ Bars and Cafés
 
 ## Show Where Are We At When Viewing a File
 less -mouse \
-source: [LinuxManual] (https://man7.org/linux/man-pages/man1/less.1.html)
+source: [LinuxManual](https://man7.org/linux/man-pages/man1/less.1.html) \
 ### example1:
 use less -mouse when viewing file, give us more clue where are we at on a file
 ```
@@ -224,7 +224,7 @@ cuba-whattodo.txt lines 1-24/56 35%
 
 ##  Auto Exist When Reaching the End of a file
 less -E \
-source: [GeeksForGeeks](https://www.geeksforgeeks.org/less-command-linux-examples/) 
+source: [GeeksForGeeks](https://www.geeksforgeeks.org/less-command-linux-examples/) \
 ### example 1:
 Exit the java file when we read the end
 
