@@ -224,7 +224,7 @@ cuba-whattodo.txt lines 1-24/56 35%
 
 ##  Auto Exist When Reaching the End of a file
 less -E \
-source: [GeeksForGeeks](https://www.geeksforgeeks.org/less-command-linux-examples/) \
+source: [GeeksForGeeks](https://www.geeksforgeeks.org/less-command-linux-examples/) 
 ### example 1:
 Exit the java file when we read the end
 
