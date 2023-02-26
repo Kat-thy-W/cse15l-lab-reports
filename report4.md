@@ -19,7 +19,8 @@ Commend in terminal `cd lab7/`
 2. Compile java files with Junit \
 Key Pressed: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` 
 3. Run Junit test \
-Key Pressed: `java -cp `.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
+Key Pressed: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` \
+result: one test fail.
 ![image](https://user-images.githubusercontent.com/115119572/221404858-df0b7696-927a-4bb3-98ad-19572c846b09.png)
 ## 4.Edit the code file to fix the failing test
 1. Use nano to edit ListExamples.java \
@@ -27,7 +28,7 @@ Key pressed: `Lis<tab>.j<tab><enter> \
 Commande in terminal: `nano ListExamples.java`
 ![image](https://user-images.githubusercontent.com/115119572/221405200-7cc5ab47-564d-44cc-9790-d4928a703a22.png)
 2. Use keyboard arrows navigate to the error, change increment of index1 to increment of index2, save changes and exit nano editor \
-Key Pressed: after editing errors, `<ctrl> <o> <enter> <Ctrl> <x>`
+Key Pressed: after editing errors, `<ctrl> <o> <enter> <Ctrl> <x>` \
 ![image](https://user-images.githubusercontent.com/115119572/221405346-d66b45a1-7810-4044-aeae-b2c310686132.png)
 ## 5. Run the tests, demonstrating that they now succeed
 1. Recomplie files \
@@ -38,5 +39,15 @@ Command in system: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *
 Command in system: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command was 3 up in the search history, so I used up arrow to access it. \
 Result
 ![image](https://user-images.githubusercontent.com/115119572/221405685-17011775-dc75-4af8-8fdf-f080b228b304.png)
+## 6. Commit and push the resulting change to my Github account
+1. Add file \
+Key Pressed: `git add Lis<tab>.j<tab><enter>` \
+Command in system: `git add ListExamples.java`
+2. Commit changes \
+Key Preesed: `git commit -m "changed"` \
+![image](https://user-images.githubusercontent.com/115119572/221406234-b85b4b1a-ab6e-4fab-8063-6abcfb128643.png)
+3. Push new Commit to github \
+Key Pressed: ` git push` \
+![image](https://user-images.githubusercontent.com/115119572/221406311-550326f7-a140-4cb6-9b76-070baee24efa.png)
 
 
