@@ -15,9 +15,28 @@ the `git clone git@github.com:Kat-thy-W/lab7.git` is passed into system
 ## 3. Run the tests, demonstrating that they fail
 1. Change to lab 7 directory \
 Key Pressed: `cd l<tab> <enter>` \
-comment in terminal `cd lab7/` 
+Commend in terminal `cd lab7/` 
 2. Compile java files with Junit \
 Key Pressed: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` 
 3. Run Junit test \
 Key Pressed: `java -cp `.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 ![image](https://user-images.githubusercontent.com/115119572/221404858-df0b7696-927a-4bb3-98ad-19572c846b09.png)
+## 4.Edit the code file to fix the failing test
+1. Use nano to edit ListExamples.java \
+Key pressed: `Lis<tab>.j<tab><enter> \
+Commande in terminal: `nano ListExamples.java`
+![image](https://user-images.githubusercontent.com/115119572/221405200-7cc5ab47-564d-44cc-9790-d4928a703a22.png)
+2. Use keyboard arrows navigate to the error, change increment of index1 to increment of index2, save changes and exit nano editor \
+Key Pressed: after editing errors, `<ctrl> <o> <enter> <Ctrl> <x>`
+![image](https://user-images.githubusercontent.com/115119572/221405346-d66b45a1-7810-4044-aeae-b2c310686132.png)
+## 5. Run the tests, demonstrating that they now succeed
+1. Recomplie files \
+Key pressed: `<up><up><up><enter>` \
+Command in system: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command was 3 up in the search history, so I used up arrow to access it.
+2. Run the test 
+3. Key pressed: `<up><up><up><enter>` \
+Command in system: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command was 3 up in the search history, so I used up arrow to access it. \
+Result
+![image](https://user-images.githubusercontent.com/115119572/221405685-17011775-dc75-4af8-8fdf-f080b228b304.png)
+
+
