@@ -24,8 +24,8 @@ result: one test fail.
 ![image](https://user-images.githubusercontent.com/115119572/221404858-df0b7696-927a-4bb3-98ad-19572c846b09.png)
 ## 4.Edit the code file to fix the failing test
 1. Use nano to edit ListExamples.java \
-Key pressed: `Lis<tab>.j<tab><enter> \
-Commande in terminal: `nano ListExamples.java`
+Key pressed: `Lis<tab>.j<tab><enter>` \
+Command in terminal: `nano ListExamples.java`
 ![image](https://user-images.githubusercontent.com/115119572/221405200-7cc5ab47-564d-44cc-9790-d4928a703a22.png)
 2. Use keyboard arrows navigate to the error, change increment of index1 to increment of index2, save changes and exit nano editor \
 Key Pressed: after editing errors, `<ctrl> <o> <enter> <Ctrl> <x>` \
