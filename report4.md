@@ -15,7 +15,7 @@ the `git clone git@github.com:Kat-thy-W/lab7.git` is passed into system
 ## 3. Run the tests, demonstrating that they fail
 1. Change to lab 7 directory \
 Key Pressed: `cd l<tab> <enter>` \
-Commend in terminal `cd lab7/` 
+Command in terminal `cd lab7/` 
 2. Compile java files with Junit \
 Key Pressed: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` 
 3. Run Junit test \
