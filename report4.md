@@ -31,7 +31,7 @@ Command in terminal: `nano ListExamples.java`
 Key Pressed: after editing errors, `<ctrl> <o> <enter> <Ctrl> <x>` \
 ![image](https://user-images.githubusercontent.com/115119572/221405346-d66b45a1-7810-4044-aeae-b2c310686132.png)
 ## 5. Run the tests, demonstrating that they now succeed
-1. Recomplie files \
+1. Recompile files \
 Key pressed: `<up><up><up><enter>` \
 Command in system: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command was 3 up in the search history, so I used up arrow to access it.
 2. Run the test 
